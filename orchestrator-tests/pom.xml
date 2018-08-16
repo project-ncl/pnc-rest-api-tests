@@ -6,10 +6,9 @@
   <parent>
     <groupId>org.jboss.pnc.restapitests</groupId>
     <artifactId>parent</artifactId>
-    <version>1.1.0-SNAPSHOT</version>
+    <version>1.4.0-SNAPSHOT</version>
   </parent>
 
-  <groupId>org.jboss.pnc.restapitests</groupId>
   <artifactId>orchestrator-tests</artifactId>
   <packaging>jar</packaging>
 
@@ -17,11 +16,29 @@
     <!-- Test dependencies -->
     <dependency>
       <groupId>org.jboss.pnc</groupId>
-      <artifactId>rest-client</artifactId>
+      <artifactId>rest</artifactId>
       <scope>test</scope>
     </dependency>
-
-
+    <dependency>
+      <groupId>org.jboss.pnc</groupId>
+      <artifactId>rest-model</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jboss.pnc</groupId>
+      <artifactId>model</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jboss.resteasy</groupId>
+      <artifactId>resteasy-client</artifactId>
+      <scope>test</scope>
+    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
